@@ -12,9 +12,11 @@
 
 <script>
 
-var client = new Faye.Client('http://localhost:8001/faye',{
+var client = new Faye.Client('http://172.16.1.114:81/faye',{
 	timeout: 20
 });
+
+client.publish('/foo', {text: 'Hi there'});
 
 
 jQuery(document).ready(function($) {

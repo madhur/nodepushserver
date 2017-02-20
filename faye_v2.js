@@ -19,7 +19,7 @@ bayeux.bind('subscribe', function(clientId, channel) {
 
 bayeux.bind('publish', function(clientId, channel, data) {
 	// event listener logic
-	console.log("Client: " + clientId + " Sent : " + data.Name + " to Channel: " + channel);
+	console.log("Client: " + clientId + " Sent : " + JSON.stringify(data) + " to Channel: " + channel);
 });
 
 bayeux.bind('unsubscribe', function(clientId, channel) {

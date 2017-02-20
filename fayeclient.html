@@ -9,7 +9,7 @@
         <div id="container"><li>Real Time Dashboard</li></div>
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <!--  <script src='/faye/browser/faye-browser.js'></script>  -->   
- 	<script src='/faye/client.js'></script>
+ 	<script src='client.js'></script>
 
 <script type="text/javascript">
 
@@ -23,7 +23,7 @@
 //client.subscribe('/homePage', function(message) {
 //	$('#messages').append('<p>' + message.CName + '</p>' + message.CCompanyName + '</p>' + message.CLocation + '</p>' + message.CAmount + '</p>' + message.CCreatedAt + '</p>');
 //});
-var client = new Faye.Client('http://172.16.1.105:81/faye',{
+var client = new Faye.Client('http://localhost:8001/faye',{
         timeout: 45
       });
       client.subscribe('/testStaging', function(message) {

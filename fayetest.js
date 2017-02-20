@@ -1,6 +1,6 @@
 var faye = require('faye');
 
-var chatServer = 'http://127.0.0.1/faye'
+var chatServer = 'http://127.0.0.1:8001/faye'
   , testRoomId = 'homePage'
   , testChannel = '/' + testRoomId;
 

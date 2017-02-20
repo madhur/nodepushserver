@@ -8,11 +8,11 @@
     <body>
         <div id="container"><li>Real Time Dashboard</li></div>
     <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src='/faye/browser/faye-browser.js'></script>
+    <script src='client.js'></script>
 
 <script>
 
-var client = new Faye.Client('http://ec2-54-251-222-5.ap-southeast-1.compute.amazonaws.com/faye',{
+var client = new Faye.Client('http://localhost:8001/faye',{
 	timeout: 20
 });
 
